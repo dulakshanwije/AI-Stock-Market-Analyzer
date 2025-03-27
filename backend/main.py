@@ -3,10 +3,15 @@ import requests
 from dotenv import dotenv_values
 from openai import OpenAI
 from datetime import datetime, timedelta
+from flask_cors import CORS
 
 config = dotenv_values('.env')
 
 app = Flask(__name__)
+
+CORS(app, resources={
+    r"/*": {"origins": ["http://localhost:5173"]}
+})
 
 openai = OpenAI(
     api_key = config['OPENAI_API_KEY']
