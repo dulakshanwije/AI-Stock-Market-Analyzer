@@ -2,7 +2,7 @@
     width: 100%;
     height: 100%;
     padding: 20px;
-    background-color: var(--color-3);
+    background-color: var(--color-2);
 }
 
 .SimpleBar {
@@ -14,4 +14,20 @@
     text-align: justify;
     font-size: 1rem;
     font-weight: 400;
+}
+
+.topSkelton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 30px;
+}
+
+.topSkelton p {
+    font-size: 0.9rem;
+    font-style: italic;
+    max-width: 60%;
+    text-align: center;
 }

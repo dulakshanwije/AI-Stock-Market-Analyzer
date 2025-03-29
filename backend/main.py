@@ -50,9 +50,15 @@ def get_daily_report(id):
         
         data = response.json()
         
-        return jsonify({
+        if(data['resultsCount'] > 0):
+            return jsonify({
             "success":True,
             "data": data
+            })
+        
+        return jsonify({
+            "success":False,
+            "error": "Invalid ticker value."
         })
         
     except requests.RequestException as e:
