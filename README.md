@@ -21,7 +21,7 @@
 1. **Clone the repository**
    ```sh
    git clone https://github.com/dulakshanwije/AI-Stock-Market-Analyzer.git
-   cd your-repo
+   cd AI-Stock-Market-Analyzer
    ```
 
 2. **Backend Setup (Flask)**
